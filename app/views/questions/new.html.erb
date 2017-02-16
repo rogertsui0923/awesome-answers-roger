@@ -1,0 +1,6 @@
+<h1>New Question</h1>
+
+<%# form_for is a Rails helper (built-in) generate a form to create or updated_at a record in the database through a controller. form_for expects to be given an ActiveRecord object as its first argument %>
+<%# if the object is not persisted then the form will use POST request and the URL will be the create action path which is in this case questions_path %>
+<%# we also have access to the 'f' object which eases creating fields for the form. the field will be automatically pre-popuated with any data set in the object (such as title / body). It will also automatically set special 'name' attributes to the generated field. %>
+<%= render 'form' %>
